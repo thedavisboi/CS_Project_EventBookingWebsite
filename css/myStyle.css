@@ -5,6 +5,11 @@ html, body{
 	
 }
 
+.banner{
+	text-align: left;
+	
+}
+
 .loglbl{
 	width: 35%;
 	height: 25%;
@@ -16,14 +21,6 @@ html, body{
 	float: left;
 }
 
-#container{
-	background-color: teal;
-	height: 100%;
-	width: 80%;
-	margin: 0 auto;
-	
-}
-
 #header{
 	height: 25%;
 	text-align: center;
@@ -32,8 +29,11 @@ html, body{
 	
 }
 
-#banner{
-	text-align: left;
+#container{
+	background-color: teal;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
 	
 }
 
