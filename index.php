@@ -5,10 +5,23 @@
   <h2>Welcome to your next event...</h2>
 	<div id="left">
 		<ul id="list">
-			<li><a href="index.php">HOME</a></li>
-			<li><a href="gallery.php">GALLERY</a></li>
-			<li><a href="about.php">ABOUT US</a></li>
-			<li><a href="contact.php">CONTACT US</a></li>
+			<li><a href="index.php">Home</a></li>
+			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#">Current Events</a></li>
+				  <li><a href="#">Future Events</a></li>
+				  <li><a href="#">Past Events</a></li>
+				</ul>
+			</li>
+			<li><a href="about.php">Contact Us</a></li>
+			<li><a href="contact.php">FAQs</a></li>
+			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#">Current Events</a></li>
+				  <li><a href="#">Future Events</a></li>
+				  <li><a href="#">Past Events</a></li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 
@@ -75,11 +88,25 @@
   </div>
   <!-- End of Carousel -->
   
-  <p>Squash was invented in Harrow school around 1830, when the pupils discovered that a punctured Rackets ball, which &quot;squashed&quot; on impact with the wall, produced a game with a greater variety of shots and required much more effort on the part of the players, who could not simply wait for the ball to bounce back to them as with Rackets. The variant proved popular and in 1864 the first four Squash courts were constructed at the school and Squash was officially founded as a sport in its own right.</p>
-				
-		</div>
-
+	<p>Squash was invented in Harrow school around 1830, when the pupils discovered that a punctured Rackets ball, which &quot;squashed&quot; on impact with the wall, produced a game with a greater variety of shots and required much more effort on the part of the players, who could not simply wait for the ball to bounce back to them as with Rackets. The variant proved popular and in 1864 the first four Squash courts were constructed at the school and Squash was officially founded as a sport in its own right.</p>
+  
+	<div class="tm-recommended-place-wrap">
+		<div class="tm-recommended-place">
+            <img src="images/hall.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                <div class="tm-recommended-description-box">
+					<h3 class="tm-recommended-title">Europe Hotel</h3>
+                        <p class="tm-text-highlight">Venecia, Italy</p>
+                            <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                </div>              
+					<a href="#" class="tm-recommended-price-box">
+						<p class="tm-recommended-price">$330</p>
+						<p class="tm-recommended-price-link">Event Details</p>
+                    </a>
+        </div>
 	</div>
+	
+	</div>
+
 
 </div> <!-- Enf of Contents -->
 </div> <!-- End of Container -->
