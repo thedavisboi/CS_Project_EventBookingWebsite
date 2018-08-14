@@ -3,18 +3,41 @@
 <div class="container">
 
   <h2>Welcome to your next event...</h2>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+	<div id="left">
+		<ul id="list">
+			<li><a href="index.php">HOME</a></li>
+			<li><a href="gallery.php">GALLERY</a></li>
+			<li><a href="about.php">ABOUT US</a></li>
+			<li><a href="contact.php">CONTACT US</a></li>
+		</ul>
+	</div>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+<div class="contents">
 
-      <div class="item active">
+		<!--	
+		<div id="loginLink">
+			<?php echo $message;
+				$_SESSION['page_loads'] = 0;
+				$_SESSION['page_loads']++;
+			?>
+		</div>
+		-->
+						
+		
+	<div id="right">
+			
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+
+		<div class="item active">
         <img src="images/slider/01.jpg" alt="Los Angeles" style="width:100%;">
         <div class="carousel-caption">
           <h3>Los Angeles</h3>
@@ -50,69 +73,15 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <!-- End of Carousel -->
+  
+  <p>Squash was invented in Harrow school around 1830, when the pupils discovered that a punctured Rackets ball, which &quot;squashed&quot; on impact with the wall, produced a game with a greater variety of shots and required much more effort on the part of the players, who could not simply wait for the ball to bounce back to them as with Rackets. The variant proved popular and in 1864 the first four Squash courts were constructed at the school and Squash was officially founded as a sport in its own right.</p>
+				
+		</div>
 
-<div class="contents">
-<div class="tab-pane fade show active" id="4a">
-                    <!-- Current Active Tab WITH "show active" classes in DIV tag -->
-                        <div class="tm-recommended-place-wrap">
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Asia Resort Hotel</h3>
-                                    <p class="tm-text-highlight">Singapore</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$440</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>                        
-                            </div>
+	</div>
 
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Nullam eget est a nisl</h3>
-                                    <p class="tm-text-highlight">Yangon, Myanmar</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <div id="preload-hover-img"></div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$450</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Proin interdum ullamcorper</h3>
-                                    <p class="tm-text-highlight">Bangkok, Thailand</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$460</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Lorem ipsum dolor sit</h3>
-                                    <p class="tm-text-highlight">Vientiane, Laos</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$470</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>    
-                        </div>                        
-
-                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
-                    </div> <!-- tab-pane -->
-Inside!!!
-</div>
+</div> <!-- Enf of Contents -->
 </div> <!-- End of Container -->
 
 <?php include "footer.php" ?>
