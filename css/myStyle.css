@@ -57,7 +57,7 @@ html, body{
 #left{
 	height: 70%;
 	width: 20%;
-	background-color: white;
+	background-color: wheat;
 	float: left;
 	
 }
@@ -67,14 +67,14 @@ a{
 }
 
 a:link{
-	color:white;
+	color:black;
 }
 
 a:visited{
 	color: teal;
 }
 a:hover{
-	border:solid 2px red; 
+	border:solid 2px teal; 
 	font-size: 15px; 
 	color: blue;
 }
@@ -321,13 +321,14 @@ input:focus{
 }
 
 .up_in{
-	width: 65%;
+	width: 25%;
 	float:left;
 	padding-top: 1%;
 }
 
 #up_btn{
 	clear: both;
+	float: left;
 }
 
 #btn{
