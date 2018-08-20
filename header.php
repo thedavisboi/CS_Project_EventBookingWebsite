@@ -1,3 +1,21 @@
+<?php
+	session_start();
+	$message = "";
+	if (isset($_GET['logout'])){//implement a simple logout 
+		session_unset();
+		session_destroy();
+		header("Location:index.php");//reload this page
+	}
+	if (isset($_SESSION['Uname'])){
+		$message = '<li><a href="registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
+	}
+	else {
+		$message = '<li><a href="update.php"><span class="glyphicon glyphicon-Update"></span> Update</a></li>
+					<li><a href="index.php"><span class="glyphicon glyphicon-logout"></span> Logout</a></li>';
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,8 +50,7 @@
       <li><a href="#">Page 2</a></li>
 	</ul>
 	<ul class="nav navbar-nav navbar-right">
-      <li><a href="registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		<?php echo $message ?>
     </ul>
 	<form class="navbar-form navbar-right" action="/action_page.php">
       <div class="input-group">

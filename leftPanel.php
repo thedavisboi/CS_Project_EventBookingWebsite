@@ -8,8 +8,8 @@
 				  <li><a href="#">Past Events</a></li>
 				</ul>
 			</li>
-			<li><a href="about.php">Contact Us</a></li>
-			<li><a href="contact.php">FAQs</a></li>
+			<li><a href="#.php">Contact Us</a></li>
+			<li><a href="#.php">FAQs</a></li>
 			
 		</ul>
 	</div> <!--End of Left-->
