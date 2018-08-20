@@ -7,12 +7,12 @@
 		header("Location:index.php");//reload this page
 	}
 	if (isset($_SESSION['Uname'])){
-		$message = '<li><a href="registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
-	}
-	else {
 		$message = '<li><a href="update.php"><span class="glyphicon glyphicon-Update"></span> Update</a></li>
 					<li><a href="index.php"><span class="glyphicon glyphicon-logout"></span> Logout</a></li>';
+	}
+	else {
+		$message = '<li><a href="registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
 	}
 ?>
 

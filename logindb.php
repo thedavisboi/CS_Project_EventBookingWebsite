@@ -3,5 +3,5 @@
 	$username = "root";
 	$password = "";
 	$dbase = "onlinebooking";
-		
+
 ?>
