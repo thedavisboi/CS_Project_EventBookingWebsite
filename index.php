@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "header.php"; ?>
 
 <div class="container">
 
@@ -92,4 +92,4 @@
 </div> <!-- Enf of Contents -->
 </div> <!-- End of Container -->
 
-<?php include "footer.php" ?>
+<?php include "footer.php"; ?>

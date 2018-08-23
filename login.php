@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "header.php"; ?>
 
 <div class="container">
 	<h2>Register With Us!</h2>
@@ -22,4 +22,4 @@
 
 </div> <!--End of Container-->
 
-<?php include "footer.php" ?>
+<?php include "footer.php"; ?>
