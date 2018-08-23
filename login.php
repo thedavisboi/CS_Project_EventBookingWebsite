@@ -1,4 +1,34 @@
-<?php include "header.php"; ?>
+<?php include "header.php"; 
+
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+		
+		$uname = $_POST["uname"];
+		$pass = $_POST["pass"];
+
+		require "connection.php";
+
+		$sql = "SELECT * from users WHERE uname = '$uname' AND pass = sha1('$pass')";
+
+	$result = mysqli_query($conn, $sql);
+
+	if (mysqli_num_rows($result) > 0) {
+    	// output data of each row
+    	while($row = mysqli_fetch_assoc($result)) {
+        	
+        	$_SESSION["uname"] = $row["uname"];
+        	$_SESSION["fname"] = $row["fname"];
+        	$_SESSION["lname"] = $row["lname"];
+
+        	header("location: index.php");
+
+    	}
+	} else {
+    echo "0 results";
+	}
+
+}
+
+?>
 
 <div class="container">
 	<h2>Register With Us!</h2>
@@ -14,7 +44,7 @@
 			<div id="p_lbl" class= "up_lbl">Password: </div> 
 				<div id="p_ip" class="up_in"><input type="password" name="pass" id="pass" /></div>
 			
-			<div id="up_btn" ><input type="submit" name="submit" id="submit" value="Submit"  /></div>
+			<div id="up_btn" ><input type="submit" name="submit" id="submit" value="Submit" /></div>
 		</fieldset>
 	</form>
 
