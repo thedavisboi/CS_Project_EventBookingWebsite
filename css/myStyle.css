@@ -1,9 +1,14 @@
 html, body{
 	height: 100%;
 	background-color: wheat;
-	font-family: tahoma;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 17px;
+	text-decoration: none;
+	color: teal;
 	
 }
+
+
 
 .banner{
 	text-align: left;
@@ -30,7 +35,7 @@ html, body{
 }
 
 #container{
-	background-color: teal;
+	background-color: wheat;
 	height: 100%;
 	width: 80%;
 	margin: 0 auto;
@@ -108,7 +113,7 @@ input:focus{
 }
 
 #right{
-	background-color: white;
+	background-color: black;
 	height: 70%;
 	width: 80%;
 	float: left;

@@ -1,20 +1,16 @@
 <?php
 	session_start();
 	$message = "";
-	if (isset($_GET['logout'])){//implement a simple logout 
-		session_unset();
-		session_destroy();
-		header("Location:index.php");//reload this page
-	}
+	
 	if (isset($_SESSION['uname'])){
-		$message = '<li><a href="update.php"><span class="glyphicon glyphicon-Update"></span> Update</a></li>
-					<li><a href="index.php"><span class="glyphicon glyphicon-logout"></span> Logout</a></li>';
+		$message = '<li><a href="#"><span class="glyphicon glyphicon-Update"></span> <?php ?> </a></li>
+					<li><a href="logout.php"><span class="glyphicon glyphicon-logout"></span> Logout</a></li>';
 	}
 	else {
 		$message = '<li><a href="registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 					<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
 	}
-  
+
 ?>
 
 <!DOCTYPE html>

@@ -1,4 +1,9 @@
-<?php include "header.php"; ?>
+<?php include "header.php"; 
+
+  if(isset($_SESSION["uname"])){
+    echo "Welcome " . $_SESSION["fname"];
+  }
+?>
 
 <div class="container">
 
@@ -7,16 +12,6 @@
 	<?php include "leftPanel.php" ?>
 
 <div class="contents">
-
-		<!--	
-		<div id="loginLink">
-			<?php echo $message;
-				$_SESSION['page_loads'] = 0;
-				$_SESSION['page_loads']++;
-			?>
-		</div>
-		-->
-						
 		
 	<div id="right">
 			
@@ -89,7 +84,7 @@
 	</div>
 
 
-</div> <!-- Enf of Contents -->
+</div> <!-- End of Contents -->
 </div> <!-- End of Container -->
 
 <?php include "footer.php"; ?>
