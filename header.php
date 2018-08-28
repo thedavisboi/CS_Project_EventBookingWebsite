@@ -36,13 +36,7 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.php">Home</a></li>
-	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Current Events</a></li>
-          <li><a href="#">Future Events</a></li>
-          <li><a href="#">Past Events</a></li>
-        </ul>
-      </li>
+	  <li><a href="events.php">Events</a></li>
       <li><a href="#">Page 1</a></li>
       <li><a href="#">Page 2</a></li>
 	</ul>

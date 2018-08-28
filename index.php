@@ -3,6 +3,7 @@
   if(isset($_SESSION["uname"])){
     echo "Welcome " . $_SESSION["fname"];
   }
+
 ?>
 
 <div class="container">
