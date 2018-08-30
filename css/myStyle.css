@@ -113,7 +113,7 @@ input:focus{
 }
 
 #right{
-	background-color: black;
+	background-color: wheat;
 	height: 70%;
 	width: 80%;
 	float: left;
@@ -199,7 +199,7 @@ input:focus{
 }
 
 .tm-recommended-price-link {
-    color: white;
+    color: teal;
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
