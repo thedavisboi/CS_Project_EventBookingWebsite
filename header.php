@@ -1,59 +1,97 @@
+<!-- templatemo 367 shoes -->
+<!-- 
+Shoes Template 
+http://www.templatemo.com/preview/templatemo_367_shoes 
+-->
 <?php
 	session_start();
 	$message = "";
+	$message2 = "";
 	
 	if (isset($_SESSION['uname'])){
-		$message = '<li><a href="#"><span class="glyphicon glyphicon-Update"></span> <?php ?> </a></li>
-					<li><a href="logout.php"><span class="glyphicon glyphicon-logout"></span> Logout</a></li>';
+		$message = '<div id="header_right">
+						<p>
+							<a href="#">My Account</a> | <a href="#">New Event</a> | <a href="logout.php">Log Out</a>
+						</p>
+					</div>';
+					
+		$message2 = '<a href="#">New Event</a> |';
 	}
 	else {
-		$message = '<li><a href="registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
+		$message = '<div id="header_right">
+						<p>
+							<a href="registration.php">Register</a> | <a href="login.php">Log In</a>
+						</p>
+					</div>';
 	}
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Book It 'n Come</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="css/myStyle.css" rel="stylesheet" type="text/css" />
-  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Book It 'n Come</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
 </head>
 
 <body>
 
-<div class="header"> <!-- header found at https://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.php">Book It 'n Come</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.php">Home</a></li>
-	  <li><a href="events.php">Events</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-	</ul>
-	<ul class="nav navbar-nav navbar-right">
-		<?php echo $message ?>
-    </ul>
-	<form class="navbar-form navbar-right" action="/action_page.php">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search" name="search">
-        <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
-          </button>
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="#">Book It 'n Come</a></h1></div>
+        
+		<?php echo $message; ?>
+		
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_header -->
+    
+    <div id="templatemo_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.php" class="selected">Home</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> <!-- end of ddsmoothmenu -->
+		
+        <div id="templatemo_search">
+            <form action="#" method="get">
+              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
         </div>
-      </div>
-    </form>
-	
-  </div>
-</nav>
-</div> <!-- end of header -->
+    </div> <!-- END of templatemo_menubar -->
