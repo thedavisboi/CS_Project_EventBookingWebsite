@@ -1,14 +1,6 @@
 <?php include "header.php";
 	
-	if($_SERVER["REQUEST_METHOD"] == "POST"){
-		
-		$_SESSION["eventID"] = $_POST["eventID"];
-		header("location: confirmation.php");
-	}
-
-?>
-
-<?php
+	
 
 	require "connection.php";
 
@@ -57,7 +49,7 @@
 	            
 	            	<div class="tm-recommended-price-box">
 						<p class="tm-recommended-price"> $<?php echo "$eventCost" ?> </p>
-							<form action="events.php" method="podt">
+							<form action="events.php" method="post">
 								<button type="submit" class="tm-recommended-price-link">Book Now!</button>
 							<input type="hidden" name="" value="<?php echo "$eventID" ?>">
 							</form>
