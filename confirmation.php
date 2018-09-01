@@ -1,6 +1,7 @@
 <?php include "header.php"; 
 
-	require "connection.php"; 
+	require "connection.php";
+	
 	$eventID = $_SESSION["eventID"];
 
 	$sql = "SELECT * from events where eventID = $eventID";
