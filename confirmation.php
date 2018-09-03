@@ -1,11 +1,11 @@
 <?php include "header.php"; 
 
 	require "connection.php";
-	
+
 	$eventID = $_SESSION["eventID"];
 
-	$sql = "SELECT * from events where eventID = $eventID";
-	
+	$sql = "SELECT * from events WHERE eventID = '$eventID'";
+
 	$result = mysqli_query($conn, $sql);
 
 	if (mysqli_num_rows($result) > 0){
@@ -27,7 +27,7 @@
 			
 		}
 	}else {
-		echo "0 results";
+		$message = "0 results";
 	}
 
 ?>
@@ -64,21 +64,20 @@
         	
         	<h1>Confirmation Page</h1>
                 
-				<p>Please review the existing information and click to confirm your booking </p>
-
-			<p>Event Title:   <?php echo "$eventTitle"; ?> </p>
+                <p>Event Title:   <?php echo "$eventTitle"; ?> </p>
 				
-
 			<p>Event Description: <?php echo "$eventDesc"; ?> </p>
 
-			<p>Event Price: <?php echo "$eventCost"; ?> </p>
+			<p>Event Price: <?php echo "$eventCost"; ?> </p> <br/>
 
-			<p><input type="submit" name="confirm" value="Confirm"></p>
-	            
-            <div class="cleaner"></div>
+			<form action="confirmation.php?id=<?php echo "$eventID"; ?>" method="post">
+
+			<button name="confirm" class="btn bto-primary btn-lg" type="submit">Confirm</button>
                   	
-        </div> 
+        </div>
+
         <div class="cleaner"></div>
+
     </div> <!-- END of templatemo_main -->
 
 <?php include "footer.php"; ?>

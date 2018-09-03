@@ -11,7 +11,7 @@ http://www.templatemo.com/preview/templatemo_367_shoes
 	if (isset($_SESSION['uname'])){
 		$message = '<div id="header_right">
 						<p>
-							<a href="#">My Account</a> | <a href="#">New Event</a> | <a href="logout.php">Log Out</a>
+							<a href="#"> My Profile </a> | <a href="#">New Event</a> | <a href="logout.php">Log Out</a>
 						</p>
 					</div>';
 					

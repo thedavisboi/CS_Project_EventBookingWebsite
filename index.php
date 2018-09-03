@@ -94,8 +94,8 @@
 	            	<div class="tm-recommended-price-box">
 						<p class="tm-recommended-price"> $<?php echo "$eventCost" ?> </p>
 							<form action="index.php" method="post" >
-								<button type="submit" class="tm-recommended-price-link">Book Now!</button>
-							<input type="hidden" name="" value="<?php echo "$eventID" ?>">
+								<button type="submit" class="tm-recommended-price-link btn btn-default btn-lg btn-block">Book Now!</button>
+							<input type="hidden" name="eventID" value="<?php echo "$eventID" ?>">
 							</form>
 							
 	                </div>

@@ -15,7 +15,7 @@
     	// output data of each row
     	while($row = mysqli_fetch_assoc($result)) {
         	
-        	$_SESSION["uname"] = $row["uname"];
+            $_SESSION["uname"] = $row["uname"];
         	$_SESSION["fname"] = $row["fname"];
         	$_SESSION["lname"] = $row["lname"];
 

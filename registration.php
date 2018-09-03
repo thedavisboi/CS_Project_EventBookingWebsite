@@ -16,7 +16,7 @@
 
 
 		if (mysqli_query($conn, $sql)) {
-			$message = '<p>New record created successfully</p>';
+			$message = '<p><br/>' . $uname . ' added to database</p>';
 		} else {
 	    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 		}
