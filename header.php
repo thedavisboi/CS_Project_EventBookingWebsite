@@ -7,15 +7,25 @@ http://www.templatemo.com/preview/templatemo_367_shoes
 	session_start();
 	$message = "";
 	$message2 = "";
+	$message3 = "";
+	$message4 = "";
+	$loginMsg = "";
+	$message6 = "";
 	
-	if (isset($_SESSION['uname'])){
+	if (isset($_SESSION["uname"])){
 		$message = '<div id="header_right">
 						<p>
-							<a href="#"> My Profile </a> | <a href="#">New Event</a> | <a href="logout.php">Log Out</a>
+							<a href="myProfile.php"> My Profile </a> | <a href="#">New Event</a> | <a href="logout.php">Log Out</a>
 						</p>
 					</div>';
 					
 		$message2 = '<a href="#">New Event</a> |';
+
+		
+
+		$message6 = '<form action="confirmation.php" method="post">
+						<button name="confirm" class="btn bto-primary btn-lg" type="submit">Confirm</button>
+            		</form>';
 	}
 	else {
 		$message = '<div id="header_right">
@@ -23,6 +33,8 @@ http://www.templatemo.com/preview/templatemo_367_shoes
 							<a href="registration.php">Register</a> | <a href="login.php">Log In</a>
 						</p>
 					</div>';
+
+		$loginMsg = '<p>Please <a href="login.php">Login</a> before confirming your booking</p>';
 	}
 
 ?>

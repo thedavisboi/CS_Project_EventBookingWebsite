@@ -1,5 +1,21 @@
 <?php include "header.php"; 
 
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+		require "connection.php";
+		$uname = $_SESSION["uname"];
+		$eventID = $_SESSION["eventID"];
+
+		$sql = "INSERT INTO `bookings` (`bookingID`, `uname`, `eventID`) VALUES (NULL, '$uname', '$eventID');";
+
+		if(mysqli_query($conn, $sql)){
+			header("location: thankYou.php");
+		}else {
+			$message3 = "Error: " . $sql . "<br>" . mysqli_error($conn);
+		}
+
+	}
+
+
 	require "connection.php";
 
 	$eventID = $_SESSION["eventID"];
@@ -27,7 +43,7 @@
 			
 		}
 	}else {
-		$message = "0 results";
+		$message4 = "0 results";
 	}
 
 ?>
@@ -70,10 +86,14 @@
 
 			<p>Event Price: <?php echo "$eventCost"; ?> </p> <br/>
 
-			<form action="confirmation.php?id=<?php echo "$eventID"; ?>" method="post">
+			<?php echo $message6; ?>
 
-			<button name="confirm" class="btn bto-primary btn-lg" type="submit">Confirm</button>
-                  	
+            <br/><br/>
+            <?php 
+            	echo $message3; 
+            	echo $message4;
+            	echo $loginMsg;
+            ?>      	
         </div>
 
         <div class="cleaner"></div>
